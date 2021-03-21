@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation with Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700">
+</head>
+<body>
+    <div class="container">
+        <div class="container-content">
+            <h2>Create Account</h2>
+            <p style="padding-top: 1rem;">It's free and hardly takes more than 30 seconds</p>
+
+            <form action="" id="form">
+                <div class="row">
+                    <div class="input-container">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Username" id="username"><br>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-send"></i>
+                        <input type="email"  placeholder="Email Address" name="" id="email"><br>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-lock"></i>
+                        <i class="fa fa-eye" id="eye" onclick="toggle()"></i>
+                        <input type="password" placeholder="Password" id="password"><br>
+                        <small>Error Message</small>
+                    </div>
+                    <div class="input-container">
+                        <i class="fa fa-check"></i>
+                        <input type="password" placeholder="Confirm Password" id="password2"><br>
+                        <small>Error Message</small>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            
+            
+            <p style="font-size:12px; color:grey; padding-top:1rem">By clicking the sign up button, you are to our <br><span style="color: #009970; font-weight: bold;">Terms & Conditions,</span>
+                 and <span style="color:#009970; font-weight: bold;">Privacy Policy</span></p>
+        </div>
+    </div>
+    
+ 
+    
+<script src="script.js"></script> 
+</body>
+</html>
